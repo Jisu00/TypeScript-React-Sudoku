@@ -21,8 +21,9 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    background: ${({ theme }) => theme.background_color };
     font-family: 'SUIT-Medium';
-    color: ${({ theme }) => theme.colors.black };
+    color: ${({ theme }) => theme.palette.black };
     font-size: 1.125rem;
     margin: 0 auto;
     padding: 0 2rem;

@@ -94,7 +94,7 @@ const StyledContainer = styled.div<IStyledCellContainer>`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  border: 1px solid ${({ theme }) => theme.colors.black};
+  border: 1px solid ${({ theme }) => theme.palette.black};
 
   div:nth-child(3n) { border-right: none; }
   div:nth-child(3n-2) { border-left: none; }
@@ -104,7 +104,7 @@ const StyledContainer = styled.div<IStyledCellContainer>`
   ${props => {
     if (props.isSelected)
       return css`
-        background: ${props.theme.colors.gray};
+        background: ${props.theme.palette.gray};
       `
   }}
 `;

@@ -43,7 +43,8 @@ const StyledBoard = styled.div`
   width: 23rem;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  border: 1px solid ${({ theme }) => theme.colors.black};
+  border: 1px solid ${({ theme }) => theme.palette.black};
+  background: white;
 `;
 
 export default Board;
